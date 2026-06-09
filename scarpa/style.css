@@ -1,0 +1,491 @@
+/* =========================================================
+   SCARPA – jednoduché CSS
+   Tento štýl je písaný jednoducho, aby sa v ňom ľahko
+   orientoval aj študent. Obsah stránky zostáva rovnaký.
+   ========================================================= */
+
+/* ZÁKLAD */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b0b;
+  color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-muted {
+  color: #b8b8b8 !important;
+}
+
+/* SPOLOČNÉ ČASTI */
+.sekcia {
+  padding: 90px 0;
+}
+
+.popis-sekcie {
+  display: inline-block;
+  color: #ff6a4f;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nadpis-sekcie {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-size: 56px;
+  margin: 0;
+}
+
+.text-sekcie {
+  color: #b8b8b8;
+  line-height: 1.8;
+  max-width: 62ch;
+}
+
+.ciara {
+  width: 72px;
+  height: 2px;
+  margin: 16px 0 22px;
+  background: #d92c20;
+}
+
+/* NAVIGÁCIA */
+.navbar-dark {
+  background: rgba(11, 11, 11, 0.35) !important;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar-dark.scrolled {
+  background: rgba(11, 11, 11, 0.96) !important;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.znacka {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  color: #d92c20;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.navbar .nav-link {
+  color: #d9d9d9 !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* TLAČIDLÁ */
+.cervene-tlacitko,
+.obrysove-tlacitko {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+.cervene-tlacitko {
+  background: #d92c20;
+  color: #ffffff;
+  border: 1px solid #d92c20;
+}
+
+.cervene-tlacitko:hover {
+  background: #b0241a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.obrysove-tlacitko {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.obrysove-tlacitko:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* ÚVOD / HERO */
+.uvod {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: end;
+  padding-top: 88px;
+  overflow: hidden;
+}
+
+.uvod .carousel,
+.uvod .carousel-inner,
+.uvod .carousel-item {
+  min-height: 100vh;
+}
+
+.uvod .carousel-item {
+  background: #000000;
+}
+
+.uvod-obrazok {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.uvod::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 11, 11, 0.08) 0%,
+    rgba(11, 11, 11, 0.5) 45%,
+    rgba(11, 11, 11, 0.95) 100%
+  );
+  pointer-events: none;
+}
+
+.uvod-obsah {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding-bottom: 80px;
+}
+
+.podnadpis {
+  color: #ff6a4f;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.uvod-nadpis {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  line-height: 0.95;
+  font-size: 110px;
+  text-transform: uppercase;
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+  margin: 0;
+}
+
+.uvod-popis {
+  max-width: 580px;
+  color: #e3e3e3;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* ČÍSLA / INFO */
+.cislo {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.popis-cisla {
+  color: #b8b8b8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.cerveny-stitok {
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #d92c20;
+  border-radius: 999px;
+  padding: 7px 12px;
+}
+
+/* PRODUKTY */
+.karta-produktu {
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.karta-produktu:hover {
+  transform: translateY(-6px);
+  border-color: rgba(217, 44, 32, 0.75);
+}
+
+.obrazok-produktu {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 4.1;
+  background: #ffffff;
+}
+
+.obrazok-produktu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.obsah-produktu {
+  padding: 20px 20px 22px;
+}
+
+.nazov-produktu {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.popis-produktu {
+  color: #b8b8b8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.cena {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.hviezdy {
+  color: #ffcf5a;
+  letter-spacing: 2px;
+}
+
+/* ZOZNAM FUNKCIÍ */
+.zoznam-funkcii {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.zoznam-funkcii li {
+  padding: 16px 0;
+  border-bottom: 1px solid #2a2a2a;
+  color: #b8b8b8;
+}
+
+.zoznam-funkcii li:last-child {
+  border-bottom: 0;
+}
+
+.zoznam-funkcii li strong {
+  color: #ffffff;
+}
+
+/* GALÉRIA */
+.mriezka-galerie {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.polozka-galerie {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  min-height: 220px;
+  border: 1px solid #2a2a2a;
+  background: #111111;
+}
+
+.polozka-galerie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prekrytie {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
+  color: #ffffff;
+}
+
+.galeria-velka {
+  grid-column: span 2;
+  grid-row: span 2;
+  min-height: 450px;
+}
+
+.galeria-mala {
+  min-height: 220px;
+}
+
+/* FORMULÁR */
+.form-control,
+.form-select {
+  background: #0e0e0e;
+  border: 1px solid #303030;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: #111111;
+  color: #ffffff;
+  border-color: #d92c20;
+  box-shadow: 0 0 0 0.2rem rgba(217, 44, 32, 0.15);
+}
+
+.form-label {
+  color: #eeeeee;
+  font-weight: 600;
+}
+
+.pomocny-text {
+  color: #b8b8b8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* ČASOVÁ OS */
+.casova-osa {
+  border-left: 1px solid #2a2a2a;
+  padding-left: 16px;
+}
+
+.casova-polozka {
+  position: relative;
+  padding-left: 16px;
+}
+
+.casova-polozka::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d92c20;
+}
+
+/* PÄTIČKA */
+.patka {
+  border-top: 1px solid #2a2a2a;
+  background: #050505;
+}
+
+.patka small {
+  color: #868686;
+}
+
+/* ZOBRAZENIE PRI SCROLLE */
+.objavi-sa {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.objavi-sa.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* MODAL */
+.modal-content {
+  background: #141414;
+  color: #f4f4f4;
+  border: 1px solid #2a2a2a;
+  border-radius: 22px;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #2a2a2a;
+}
+
+.btn-close-white {
+  filter: invert(1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .uvod-obsah {
+    padding-bottom: 56px;
+  }
+
+  .mriezka-galerie {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria-velka,
+  .galeria-mala {
+    grid-column: span 1;
+    grid-row: span 1;
+    min-height: 260px;
+  }
+
+  .uvod-nadpis {
+    font-size: 72px;
+  }
+
+  .nadpis-sekcie {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mriezka-galerie {
+    grid-template-columns: 1fr;
+  }
+
+  .polozka-galerie,
+  .galeria-velka,
+  .galeria-mala {
+    min-height: 240px;
+  }
+
+  .uvod-nadpis {
+    font-size: 52px;
+  }
+
+  .nadpis-sekcie {
+    font-size: 36px;
+  }
+}

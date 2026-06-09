@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCARPA — Galéria</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigácia webu -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="znacka" href="index.html">SCARPA</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <div class="navbar-nav ms-auto gap-lg-2 pt-3 pt-lg-0">
+        <a class="nav-link" href="index.html">Úvod</a>
+        <a class="nav-link" href="o-znacke.html">O značke</a>
+        <a class="nav-link" href="produkty.html">Produkty</a>
+        <a class="nav-link" href="technologie.html">Technológie</a>
+        <a class="nav-link" href="galeria.html">Galéria</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Galéria fotografií -->
+<section class="sekcia" style="padding-top:120px">
+  <div class="container-fluid px-4">
+    <div class="text-center mb-5 objavi-sa">
+      <span class="popis-sekcie">Galéria</span>
+      <h1 class="nadpis-sekcie">Výber fotografií</h1>
+      <p class="text-sekcie mx-auto mt-3">Kombinácia produktových záberov, detailov podrážky a atmosférických horských fotografií.</p>
+    </div>
+
+    
+    <div class="mriezka-galerie objavi-sa">
+      <button class="polozka-galerie galeria-velka otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Ribelle Tech 3 HD" data-src="https://us.scarpa.com/cdn/shop/files/71074_250_1_03_rib_tec_3_hd_blk_ora_ribelle_tech_3.0_hd_black_bright_orange_1.jpg?v=1732099658&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/71074_250_1_03_rib_tec_3_hd_blk_ora_ribelle_tech_3.0_hd_black_bright_orange_1.jpg?v=1732099658&width=312" alt="Ribelle Tech 3 HD">
+        <div class="prekrytie"><div class="fw-bold">Ribelle Tech 3 HD</div><galeria-malaall>technický alpský model</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Mont Blanc GTX" data-src="https://us.scarpa.com/cdn/shop/files/87526-200-3_01_MON-BLA-GTX_Ant-Ora_MONTBLANCGTX_Anthracite-Orange.jpg?v=1766523933&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/87526-200-3_01_MON-BLA-GTX_Ant-Ora_MONTBLANCGTX_Anthracite-Orange.jpg?v=1766523933&width=312" alt="Mont Blanc GTX">
+        <div class="prekrytie"><div class="fw-bold">Mont Blanc GTX</div><galeria-malaall>odolný horský model</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Phantom 8000 Thermic HD" data-src="https://scarpa.com/cdn/shop/files/87403-500-1_00_PHA-8000-THE-HD_Blk-Ora.jpg?v=1769175492&width=3000">
+        <img src="https://scarpa.com/cdn/shop/files/87403-500-1_00_PHA-8000-THE-HD_Blk-Ora.jpg?v=1769175492&width=3000" alt="Phantom 8000 Thermic HD">
+        <div class="prekrytie"><div class="fw-bold">Phantom 8000 Thermic HD</div><galeria-malaall>expedičná obuv do extrému</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Phantom Tech HD" data-src="https://us.scarpa.com/cdn/shop/files/87426-210-1_PHA-TEC-HD_Blk-Ora_Phantom_Tech_HD___Black_-_Bright_Orange.png?v=1762289328&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/87426-210-1_PHA-TEC-HD_Blk-Ora_Phantom_Tech_HD___Black_-_Bright_Orange.png?v=1762289328&width=312" alt="Phantom Tech HD">
+        <div class="prekrytie"><div class="fw-bold">Phantom Tech HD</div><galeria-malaall>ľad a mix</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Grand Dru GTX" data-src="https://us.scarpa.com/cdn/shop/files/87504_200_1_gra_dru_gtx_for_grand_dru_gtx_forest_1.jpg?v=1732098247&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/87504_200_1_gra_dru_gtx_for_grand_dru_gtx_forest_1.jpg?v=1732098247&width=312" alt="Grand Dru GTX">
+        <div class="prekrytie"><div class="fw-bold">Grand Dru GTX</div><galeria-malaall>odolný horský model</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Charmoz HD Women's" data-src="https://us.scarpa.com/cdn/shop/files/71052_252_1_cha_hd_w_sha_mal_charmoz_hd_wmn_shark_maldive_1.jpg?v=1732098538&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/71052_252_1_cha_hd_w_sha_mal_charmoz_hd_wmn_shark_maldive_1.jpg?v=1732098538&width=312" alt="Charmoz HD Women's">
+        <div class="prekrytie"><div class="fw-bold">Charmoz HD Women's</div><galeria-malaall>rýchly technický výstup</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Manta Tech GTX Women's" data-src="https://us.scarpa.com/cdn/shop/files/87506_202_1_man_tec_gtx_w_con_grb_manta_tech_gtx_wmn_conifer_green_blue_1.jpg?v=1732098827&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/87506_202_1_man_tec_gtx_w_con_grb_manta_tech_gtx_wmn_conifer_green_blue_1.jpg?v=1732098827&width=312" alt="Manta Tech GTX Women's">
+        <div class="prekrytie"><div class="fw-bold">Manta Tech GTX Women's</div><galeria-malaall>univerzálny mountaineering</galeria-malaall></div>
+      </button>
+      <button class="polozka-galerie galeria-mala otvor-fotku btn p-0" data-bs-toggle="modal" data-bs-target="#previewModal" data-title="Ribelle HD Men's" data-src="https://us.scarpa.com/cdn/shop/files/71088-250-7_rib-hd_car-azu_ribelle_hd___carbon_-_azure.jpg?v=1736480772&width=312">
+        <img src="https://us.scarpa.com/cdn/shop/files/71088-250-7_rib-hd_car-azu_ribelle_hd___carbon_-_azure.jpg?v=1736480772&width=312" alt="Ribelle HD Men's">
+        <div class="prekrytie"><div class="fw-bold">Ribelle HD Men's</div><galeria-malaall>ľahká a presná obuv</galeria-malaall></div>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modál na náhľad fotografie -->
+<div class="modal fade" id="previewModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-uppercase" id="previewTitle" style="letter-spacing:.14em">Galéria</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="previewImage" src="https://us.scarpa.com/cdn/shop/files/71074_250_1_03_rib_tec_3_hd_blk_ora_ribelle_tech_3.0_hd_black_bright_orange_1.jpg?v=1732099658&width=312" class="w-100 rounded-4" style="max-height:74vh;object-fit:contain;background:#fff" alt="preview">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Päta stránky -->
+<footer class="patka py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+    <div>
+      <div class="znacka" style="font-size:1.25rem">SCARPA</div>
+      <galeria-malaall>Asolo, Italy · Since 1938</galeria-malaall>
+    </div>
+    <galeria-malaall>© 2025 SCARPA. Všetky práva vyhradené.</galeria-malaall>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

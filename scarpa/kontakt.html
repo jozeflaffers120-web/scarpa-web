@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SCARPA — Kontakt</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigácia webu -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="znacka" href="index.html">SCARPA</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <div class="navbar-nav ms-auto gap-lg-2 pt-3 pt-lg-0">
+        <a class="nav-link" href="index.html">Úvod</a>
+        <a class="nav-link" href="o-znacke.html">O značke</a>
+        <a class="nav-link" href="produkty.html">Produkty</a>
+        <a class="nav-link" href="technologie.html">Technológie</a>
+        <a class="nav-link" href="galeria.html">Galéria</a>
+        <a class="nav-link" href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Kontakt a formulár -->
+<section class="sekcia" style="padding-top:120px">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5 objavi-sa">
+        <span class="popis-sekcie">Kontakt</span>
+        <h1 class="nadpis-sekcie">Formulár</h1>
+        <div class="ciara"></div>
+        <p class="text-sekcie">Kontaktujte nás pre otázky k modelom, dostupnosti alebo odporúčaniu vhodnej obuvi podľa typu výstupu.</p>
+        <div class="tmava-karta p-4 mb-3">
+          <div class="fw-bold mb-2">SCARPA Customer Support</div>
+          <div class="text-muted">Asolo, Italy</div>
+          <div class="text-muted">Po–Pi · 9:00–17:00</div>
+          <div class="text-muted">info@scarpa-demo.local</div>
+        </div>
+        <div class="tmava-karta p-4">
+          <div class="fw-bold mb-2">Formulár</div>
+          <div class="text-muted">Vyplňte údaje a pošlite nám správu s požiadavkou alebo otázkou.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 objavi-sa">
+        <form id="contactForm" class="tmava-karta p-4 p-md-5 needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Meno</label>
+              <input type="text" class="form-control" required minlength="3" placeholder="Jozef">
+              <div class="invalid-feedback">Zadaj meno aspoň z 3 znakov.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" required placeholder="meno@email.com">
+              <div class="invalid-feedback">Zadaj platný e-mail.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Predmet</label>
+              <input type="text" class="form-control" required minlength="5" placeholder="Napíš predmet správy">
+              <div class="invalid-feedback">Predmet musí mať aspoň 5 znakov.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Správa</label>
+              <textarea id="message" class="form-control" rows="5" maxlength="600" required placeholder="Napíš svoju správu..."></textarea>
+              <div class="invalid-feedback">Správa je povinná.</div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" required id="agreeCheck">
+                <label class="form-check-label" for="agreeCheck">Súhlasím so spracovaním údajov pre kontaktovanie.</label>
+                <div class="invalid-feedback">Musíš potvrdiť súhlas.</div>
+              </div>
+            </div>
+            <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
+              <button class="btn cervene-tlacitko" type="submit">Odoslať správu</button>
+              <span class="pomocny-text">Kontakt</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Toast po odoslaní -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="sentToast" class="toast text-bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">Formulár bol pripravený na odoslanie.</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-digaleria-malaiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Päta stránky -->
+<footer class="patka py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+    <div>
+      <div class="znacka" style="font-size:1.25rem">SCARPA</div>
+      <galeria-malaall>Asolo, Italy · Since 1938</galeria-malaall>
+    </div>
+    <galeria-malaall>© 2025 SCARPA. Všetky práva vyhradené.</galeria-malaall>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
